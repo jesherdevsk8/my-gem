@@ -1,6 +1,8 @@
-#!/usr/bin/env rubys
+# frozen_string_literal: true
 
-require_relative "../lib/translator"
+# !/usr/bin/env ruby
+
+require_relative '../lib/translator'
 
 if ARGV[0]
   puts Translate.hi(ARGV[0])

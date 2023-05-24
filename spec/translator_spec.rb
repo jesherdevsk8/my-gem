@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 RSpec.describe Translator do
-  it "has a version number" do
+  it 'has a version number' do
     expect(Translator::VERSION).not_to be nil
   end
 
-  it "test default english hello" do
+  it 'test default english hello' do
     result = Translate.hi
     expect(Translate.hi).to eq(result)
   end
@@ -15,7 +15,7 @@ RSpec.describe Translator do
     expect(Translate.hi('english')).to eq(result)
   end
 
-  it "test spanish hello" do
+  it 'test spanish hello' do
     result = Translate.hi('spanish')
     expect(Translate.hi('spanish')).to eq(result)
   end
